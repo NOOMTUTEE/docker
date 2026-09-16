@@ -34,12 +34,12 @@
 ---
 
 ## Phase 0 — Setup & cleanup
-- [ ] **T01 — Clean template leftovers**
+- [x] **T01 — Clean template leftovers**
   Files: `src/App.css` (delete if unused), `src/assets/` (delete if unused), `src/App.jsx`, `src/index.css`.
   Do: remove `App.css` import, verify `@import "tailwindcss";` + `@plugin "daisyui";` remain in `index.css`.
   Verify: `npm run dev` loads with no missing-import errors.
-  Result: _
-- [ ] **T02 — Define file skeleton (no logic yet)**
+  Result: deleted `src/App.css` + `src/assets/` (3 files); `npm run build` ✓ 931ms, `npm run lint` 0 warnings 0 errors.
+- [~] **T02 — Define file skeleton (no logic yet)** **Status: in-progress**
   Files: `src/lib/storage.js`, `src/lib/dates.js`, `src/hooks/useTodos.js`, `src/components/{AddTodo,TodoItem,TodoList,ListSidebar,FilterBar,StatsBar,ConfirmModal,Toaster}.jsx` (stubs returning `null`).
   Do: create stubs, import in `App.jsx` without breaking render.
   Verify: `npm run lint` passes.
