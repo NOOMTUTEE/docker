@@ -1,4 +1,12 @@
 import { useState } from 'react'
+import AddTodo from './components/AddTodo.jsx'
+import TodoItem from './components/TodoItem.jsx'
+import TodoList from './components/TodoList.jsx'
+import ListSidebar from './components/ListSidebar.jsx'
+import FilterBar from './components/FilterBar.jsx'
+import StatsBar from './components/StatsBar.jsx'
+import ConfirmModal from './components/ConfirmModal.jsx'
+import Toaster from './components/Toaster.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,6 +34,15 @@ function App() {
           </div>
         </div>
       </div>
+      {/* T02 skeleton stubs — each returns null, no visual change */}
+      <AddTodo />
+      <TodoItem />
+      <TodoList />
+      <ListSidebar />
+      <FilterBar />
+      <StatsBar />
+      <ConfirmModal />
+      <Toaster />
     </div>
   )
 }

@@ -39,12 +39,12 @@
   Do: remove `App.css` import, verify `@import "tailwindcss";` + `@plugin "daisyui";` remain in `index.css`.
   Verify: `npm run dev` loads with no missing-import errors.
   Result: deleted `src/App.css` + `src/assets/` (3 files); `npm run build` ✓ 931ms, `npm run lint` 0 warnings 0 errors.
-- [~] **T02 — Define file skeleton (no logic yet)** **Status: in-progress**
+- [x] **T02 — Define file skeleton (no logic yet)**
   Files: `src/lib/storage.js`, `src/lib/dates.js`, `src/hooks/useTodos.js`, `src/components/{AddTodo,TodoItem,TodoList,ListSidebar,FilterBar,StatsBar,ConfirmModal,Toaster}.jsx` (stubs returning `null`).
   Do: create stubs, import in `App.jsx` without breaking render.
   Verify: `npm run lint` passes.
-  Result: _
-- [ ] **T03 — Theme + layout shell**
+  Result: 11 stubs created + wired in `App.jsx`; lint 0 warnings 0 errors (14 files), build ✓ 971ms.
+- [~] **T03 — Theme + layout shell** **Status: in-progress**
   Files: `src/App.jsx`.
   Do: header (title + theme toggle placeholder) / sidebar placeholder / main placeholder, responsive `flex-col md:flex-row`, touch targets ≥40px.
   Verify: manual `npm run dev` at 360px + 1280px, no horizontal scroll.
